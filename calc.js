@@ -2,7 +2,11 @@ function displayData(n) {
     result.value+=n
 }
 function evaluatef() {
-    result.value=eval(result.value)
+    if(result.value!=""){
+        try{result.value=eval(result.value)}
+        catch{ result.value="Input Error"}
+    }
+    
     
 }
 function allClear() {
